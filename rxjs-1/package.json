@@ -5,6 +5,7 @@
   "description": "The objective of this challenge is to implement a live leaderboard of a car race using RxJS.",
   "main": "race.js",
   "scripts": {
+    "start": "node example.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

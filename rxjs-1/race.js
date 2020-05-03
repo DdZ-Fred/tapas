@@ -7,7 +7,6 @@ class Race extends EventEmitter {
 
   constructor(raceDataCSVPath) {
     super();
-    ;
     this.data = csvsync.parse(
       fs.readFileSync(raceDataCSVPath),
       {
@@ -19,7 +18,7 @@ class Race extends EventEmitter {
       'Time car 2': parseFloat(data['Time car 2'], 10),
       'Location car 1': parseFloat(data['Location car 1'], 10),
       'Location car 2': parseFloat(data['Location car 2'], 10)
-    }))
+    }));
   }
 
   getCars() {
