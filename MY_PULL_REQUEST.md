@@ -22,7 +22,7 @@
       npm start
       ```
 
-    * The previous command will open the Chrome browser, make sure it's installed on your computer
+    * The previous command will open the Firefox browser, make sure it's installed on your computer
     * From the default tab, try to access any url, `https://www.wikipedia.org/` for instance
     * After url load, you should expect the page body to be replaced by `Popup opened <C> times on this tab` with `<C>` the current count.
     * You can then repetitively open/close the extension popup to see the current tab count increment.
