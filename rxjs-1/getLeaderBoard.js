@@ -26,7 +26,7 @@ function calculateLeaderBoard(state, cars, currentCarData) {
         const isCurrentCar = carName === currentCarData.carName;
         const leaderGapDistance = isCurrentCar
           ? 0
-          : currentCarData.xlocation - previousSecondCar.last.xLocation;
+          : currentCarData.xLocation - previousSecondCar.last.xLocation;
 
         const leaderGapTime = isCurrentCar
           ? 0
