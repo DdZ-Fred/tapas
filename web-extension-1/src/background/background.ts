@@ -91,13 +91,11 @@ const setupBackground = async () => {
 
 browser.runtime.onInstalled.addListener(setupBackground);
 
-// Couldn't confirm if it was actually working
 browser.tabs.onRemoved.addListener(tabId => {
   actions.removeTabCount(tabId);
 });
 
 browser.runtime.onMessage.addListener(({ command, tabId }: StationMessage, sender) => {
-  console.log('Command: ', command, '\n', sender);
   switch (command) {
     /**
      * 1. TAB POPUP WAS OPENED

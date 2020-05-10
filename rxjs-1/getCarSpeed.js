@@ -61,7 +61,7 @@ function getCarSpeed(race, speedCarName) {
  * @param {number} speed - Car speed
  */
 function defaultSubscribe(speed) {
-  process.stdout.write(`Speed: ${speed}m/s\r`);
+  process.stdout.write(`Speed: ${speed} m/s\r`);
 }
 
 module.exports = {
